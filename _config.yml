@@ -25,3 +25,4 @@ sass:
 
 collections: 
   - doctors
+theme: jekyll-theme-cayman
