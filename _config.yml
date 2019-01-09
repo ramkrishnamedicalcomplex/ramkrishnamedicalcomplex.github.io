@@ -15,7 +15,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://ramkrishnamedicalcomplex.com" # the base hostname & protocol for your site
 phone: 7059702169
-
+google_maps: https://goo.gl/maps/Ps1HcxnjR9L2
 
 # Build settings
 markdown: kramdown
