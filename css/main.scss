@@ -1,0 +1,9 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+$primary: rgb(170, 0, 0);
+.hero-body {
+    padding: 0
+}
+@import 'bulma/bulma.sass';
