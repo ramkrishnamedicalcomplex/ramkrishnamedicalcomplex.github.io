@@ -2,55 +2,9 @@
 layout: default
 ---
 
-<section class="section">
-  <div class="container">
-    <div class="columns is-multiline">
-      {% for doctor in site.doctors %}
-      <div class="column is-one-third">
-        <div class="card">
-          <header class="card-header ">
-            <p class="card-header-title has-background-primary has-text-white">
-              {{ doctor.department | upcase }}
-            </p>
-          </header>
-          <!-- <div class="card-image">
-                    <figure class="image is-4by3">
-                      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                    </figure>
-                  </div> -->
-          <div class="card-content">
-            <div class="media">
-              <div class="media-left">
-                {% if doctor.image %}
-                <figure class="image is-48x48">
-                  <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                </figure>
-                {% else %}
-                <span class="icon is-large">
-                  <i class="fa fa-user" aria-hidden="true"></i>
-                </span>
-                {% endif %}
-              </div>
-              <div class="media-content">
-                <p class="title is-4">{{ doctor.name }}</p>
-                <p class="subtitle is-6">{% for qualification in doctor.qualifications %} {{ qualification }} {% endfor
-                  %}</p>
-              </div>
-            </div>
 
-            <div class="content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-              <a href="#">#css</a> <a href="#">#responsive</a>
-              <br>
-              <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-            </div>
-          </div>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-    <!-- DOCTORS LISTING -->
+{% include gallery.html %}
 
-  </div>
-</section>
+{% include services.html %}
+
+{% include doctors.html %}

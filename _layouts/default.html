@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
-  
-  <body>
-    
-    {% include header.html %}
-    
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+{% include head.html %}
+
+<body>
+
+  {% include header.html %}
+
+  <div class="page-content">
+    <div class="wrapper">
+      {{ content }}
     </div>
-    
-    {% include footer.html %}
-    
-  </body>
+  </div>
+
+  {% include footer.html %}
+
+</body>
+<script src="{{ "/js/bulma-carousel.min.js" | prepend: site.baseurl }}"></script>
+<script>
+  (function () {
+    // your page initialization code here
+    // the DOM will be available here
+
+    var carousels = bulmaCarousel.attach();
+  })();
+</script>
+
 </html>

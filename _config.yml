@@ -8,20 +8,36 @@
 # Site settings
 title: Ramkrishna Medical Complex
 email: ramkrishnamedicalcomplex@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+tagline: Multispeciality Nursing Home and Doctor Outdoor Unit 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://ramkrishnamedicalcomplex.com" # the base hostname & protocol for your site
 phone: 7059702169
 google_maps: https://goo.gl/maps/Ps1HcxnjR9L2
+address: 132/2/12, Maulana Abul Kalam Azad Sarani Near Sri Gurudas Banerjee Halt, Phool Bagan, Kankurgachi, Kolkata, West Bengal 700054
 
-# Build settings
-markdown: kramdown
-
-sass:
-    sass_dir: ./css
+services:
+  - Medicine
+  - Chest and Respitory
+  - Diabetic and Endocrinology
+  - Cardialogy
+  - Paediactric 
+  - Oncology
+  - Surgery
+  - Orthopedic
+  - Gyne
+  - Dental Surgery
+  - Modern Operation Theatre
+  - HDU / ICCU
+  - General Ward
+  - AC/Non AC Cabin
+  - Pathology 
+  - Ambulance 
 
 collections: 
   - doctors
+
+
+# Build settings
+markdown: kramdown
+sass:
+    sass_dir: ./css

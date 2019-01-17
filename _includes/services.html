@@ -1,0 +1,26 @@
+<section class="section">
+  <div class="container">
+    <h1 class="title is-1 has-text-centered">Services</h1>
+    <div class="columns is-multiline">
+      {% for service in site.services %}
+      <div class="column is-6">
+
+        <div class="card">
+          <header class="card-header">
+            <p class="card-header-title is-size-4 has-background-primary has-text-white">
+                {{forloop.index }}. {{ service | upcase }}
+            </p>
+            
+          </header>
+          <!-- <div class="card-content">
+            <div class="content">
+              {{service}}
+            </div>
+          </div> -->
+  
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
